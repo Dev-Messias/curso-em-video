@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+
+    <style>
+        body{
+            background: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg" >Clique em mim</div>
+    <div name="teste" >Teste</div>
+    <div class="t" >Outro Teste</div>
+    <div id="sele" >Seletor</div>
+
+    <!-- Javascript DOM -->
+    <script>
+        //selecioando por Marca
+        var corpo = document.body;
+        var p1 = window.document.getElementsByTagName('p')[0];
+        var p2 = document.getElementsByTagName('p')[1];
+        window.document.write(p1.innerText + "<br>");
+        corpo.style.background = 'black';
+        document.write(p2.innerHTML)
+
+        //selecionando por ID
+        var d = window.document.getElementById('msg');
+
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...'
+
+        //selecionando por name
+        var e = document.getElementsByName('teste')[0]
+
+        e.innerText = 'Eita 😉';
+
+        //selecionando por class
+
+        var f = document.getElementsByClassName('t')[0]
+
+        f.innerText = '🚀😂🚀';
+
+        //selecionando por seletor => id = # // class = .
+        var g = document.querySelector('div#sele');
+
+        g.innerText = 'testando query'
+        
+    </script>
+</body>
+</html>
