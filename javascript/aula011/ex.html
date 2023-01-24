@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 009</title>
+</head>
+<body>
+    <h1>Teste condição</h1>
+    <p>Digite seu país :</p>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="Clique"  onclick="identificando()">
+    <p id="txtPadrao" ></p>
+    <p id="txtCondicao" ></p>
+
+    <script>
+        function identificando(){
+            var txtpais = window.document.querySelector('input#pais').value;
+
+            var txtPadrao = document.querySelector('p#txtPadrao');
+
+            var txtCondicao = document.querySelector('p#txtCondicao');
+
+            var pais = txtpais;
+
+            if(txtpais == 'Brasil'){
+                txtCondicao.innerHTML = `Você é Brasileiro`;
+            }else {
+                txtCondicao.innerHTML = `Você é Estrangeiro`;
+            }
+        }
+    </script>
+
+</body>
+</html>
