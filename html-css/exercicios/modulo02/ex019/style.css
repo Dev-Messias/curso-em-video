@@ -13,6 +13,7 @@ body {
 
 h1 {
     color: rgb(4, 109, 0);
+    font-weight: bold;
 
 }
 
@@ -24,4 +25,20 @@ h1#principal {
 
 h2 {
     color:  rgb(51, 77, 49);
+}
+
+.basico {
+    color: #3c805e;
+}
+
+.intermediario {
+    color: #80793c;
+}
+
+.avancado {
+    color: #803c3c;
+}
+
+.destaque {
+    background-color: rgba(197, 197, 96, 0.438);
 }
